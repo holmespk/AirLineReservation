@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Home Page</title>
+
+<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+	<div class="row">
+		<div class="col-md-4">
+			<h4>Flight Information</h4>
+			<form action="ControllerServlet?action=getFlightInfo" method="post">
+				<div class="form-group">
+					<label>Arrival Airport :</label> <input type="text" name="acode"
+						class="form-control" placeholder="Enter Arrival Airport">
+				</div>
+				<div class="form-group">
+					<label>Departure Airport :</label> <input type="text" name="dcode"
+						class="form-control" placeholder="Enter Departure Airport">
+				</div>
+				<div class="form-group">
+					<label>Max Legs :</label> <label class="radio-inline"> <input
+						type="radio" name="direct" value="direct" checked> 1
+					</label> <label class="radio-inline"> <input type="radio"
+						name="direct" value="onestop"> 2
+					</label> <label class="radio-inline"> <input type="radio"
+						name="direct" value="twostops"> 3
+					</label>
+				</div>
+				<button type="submit" class="btn btn-default">Submit</button>
+			</form>
+		</div>
+		<div class="col-md-4">
+			<h4>Seat Availabilty</h4>
+			<form action="ControllerServlet?action=getNoOfSeats" method="post">
+				<div class="form-group">
+					<label>FlightNumber :</label> <input type="text" name="fnumber"
+						class="form-control" placeholder="Enter FlightNumber">
+				</div>
+				<div class="form-group">
+					<label>Flight Date :</label> <input type="text" name="date"
+						class="form-control" placeholder="Enter Flight Date">
+				</div>
+				<button type="submit" class="btn btn-default">Submit</button>
+			</form>
+		</div>
+		<div class="col-md-4">
+			<h4>Fare Information</h4>
+			<form action="ControllerServlet?action=getFareInfo" method="post">
+				<div class="form-group">
+					<label>FlightNumber :</label> <input type="text" name="fnumber"
+						class="form-control" placeholder="Enter FlightNumber">
+				</div>
+				<button type="submit" class="btn btn-default">Submit</button>
+			</form>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-4">
+			<h4>Passenger Information</h4>
+			<form action="ControllerServlet?action=getPassengerList"
+				method="post">
+				<div class="form-group">
+					<label>FlightNumber :</label> <input type="text" name="fnumber"
+						class="form-control" placeholder="Enter FlightNumber">
+				</div>
+				<div class="form-group">
+					<label>Flight Date :</label> <input type="text" name="date"
+						class="form-control" placeholder="Enter Flight Date">
+				</div>
+				<button type="submit" class="btn btn-default">Submit</button>
+			</form>
+		</div>
+		<div class="col-md-4">
+			<h4>All Flight Instances</h4>
+			<form action="ControllerServlet?action=getAllInstance" method="post">
+				<div class="form-group">
+					<label>Customer_name :</label> <input type="text" name="name"
+						class="form-control" placeholder="Enter Customer_name">
+				</div>
+				<button type="submit" class="btn btn-default">Submit</button>
+			</form>
+		</div>
+	</div>
+</body>
+</html>

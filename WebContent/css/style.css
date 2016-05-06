@@ -1,0 +1,10 @@
+@CHARSET "UTF-8";
+
+.col-md-4 {
+	margin: 2%;
+	width: 29%;
+}
+
+.form-control {
+	width:50%;
+}
