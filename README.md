@@ -7,9 +7,8 @@ Cases. You do not have to provide a GUI interface for importing bulk data sets. 
 provided with a data set for grading.
 
 Use Cases
-• Display the flight numbers and weekdays of all flights Given a Departure Airport Code and Arrival Airport Code If no direct flight exists, determine multiple connecting flights which have
 
-compatible scheduled departure and arrival times and weekdays.
+• Display the flight numbers and weekdays of all flights Given a Departure Airport Code and Arrival Airport Code If no direct flight exists, determine multiple connecting flights which have compatible scheduled departure and arrival times and weekdays.
 
 • Display information for all legs Given a flight number
 
