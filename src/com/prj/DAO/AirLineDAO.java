@@ -10,8 +10,8 @@ import com.prj.model.Flight;
 import com.prj.model.Reservation;
 
 /**
- * @author holmes
- * Mar 2, 2015 2015
+ * @author Pavan Kulkarni
+ * 
  *
  * AirLineDAO.java
  */
