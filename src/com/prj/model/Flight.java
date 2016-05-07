@@ -5,8 +5,7 @@ package com.prj.model;
 
 
 /**
- * @author holmes
- * Mar 2, 2015 2015
+ * @author Pavan Kulkarni
  *
  * Flight.java
  */
